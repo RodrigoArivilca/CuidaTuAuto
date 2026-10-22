@@ -1,0 +1,20 @@
+{
+  "name": "cuidatuauto",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CuidaTuAuto: prototipo académico Expo + Express con persistencia SQL",
+  "engines": { "node": "^22.13.0 || ^24.3.0 || >=25.0.0" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs web",
+    "dev:android": "node scripts/dev.mjs android",
+    "backend": "node scripts/task.mjs backend",
+    "web": "node scripts/task.mjs web",
+    "android": "node scripts/task.mjs android",
+    "check": "node scripts/task.mjs check",
+    "test": "node scripts/task.mjs test",
+    "build": "node scripts/task.mjs build",
+    "db:migrate": "node scripts/task.mjs migrate",
+    "db:seed": "node scripts/task.mjs seed"
+  }
+}

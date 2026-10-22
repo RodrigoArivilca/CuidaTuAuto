@@ -1,0 +1,26 @@
+# Dependencias y compilaciones
+**/node_modules/
+**/dist/
+**/.expo/
+**/coverage/
+**/*.tsbuildinfo
+
+# Configuración privada y datos locales
+**/.env
+**/.env.*
+!**/.env.example
+backend/data/
+backend/.tmp/
+**/*.log
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Pruebas locales
+playwright-report/
+test-results/
+artifacts/
+backend/test-result.txt

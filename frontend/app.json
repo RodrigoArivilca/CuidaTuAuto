@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "CuidaTuAuto",
+    "slug": "cuidatuauto",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "cuidatuauto",
+    "android": {
+      "package": "com.cuidatuauto.app",
+      "adaptiveIcon": { "backgroundColor": "#102D39" }
+    },
+    "web": { "name": "CuidaTuAuto", "bundler": "metro" },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permite a CuidaTuAuto leer el QR de tu custodia.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite seleccionar evidencias del vehículo.",
+          "cameraPermission": "Permite fotografiar las evidencias del vehículo.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permite registrar la ubicación de esta ronda cuando tú lo solicites."
+        }
+      ],
+      "expo-secure-store"
+    ]
+  }
+}
